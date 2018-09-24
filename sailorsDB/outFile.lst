@@ -1,0 +1,24 @@
+SQL> SET ECHO ON
+SQL> SELECT sid, sname, rating
+  2  FROM sailors
+  3  WHERE sid > 7;
+
+       SID SNAME               RATING                                           
+---------- --------------- ----------                                           
+        22 Dave                     7                                           
+        29 Mike                     1                                           
+        31 Mary                     8                                           
+        32 Albert                   8                                           
+        58 Jim                     10                                           
+        64 Jane                     7                                           
+        71 Dave                    10                                           
+        74 Jane                     9                                           
+        85 Art                      3                                           
+        95 Jane                     3                                           
+
+10 rows selected.
+
+SQL> SET ECHO OFF
+SQL> SET SPOOL OFF
+SP2-0158: unknown SET option "SPOOL"
+SQL> SPOOL OFF
